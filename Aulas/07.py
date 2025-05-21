@@ -2,18 +2,20 @@
 
 # Variáveis são salvas na memória
 
+# =================================[Todas as Variáveis]=========================================
+
 Nome_completo = 'Felipe Manzan'
-
-n = Nome_completo
-
 Idade = 19
+maior_de_idade = Idade >= 18
+
+# ==================[Variáveis simplificadas]============================================
 
 i = Idade
-
-maior_de_idade = i >= 18
-
 md = maior_de_idade
+n = Nome_completo
 
-print('Nome:',n,'| Idade: ', i)
+# =================================[Testes]=========================================
 
-print('É Maior?',md)
+print('Nome:', n, '| Idade: ', i)
+
+print('É Maior?', md)
