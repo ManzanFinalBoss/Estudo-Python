@@ -1,41 +1,53 @@
-#==================================[Exercício]===========================
+# =========================[CABEÇALHO]=========================
+
+# PROJETO:        Aula
+# AUTOR:          Felipe Manzan
+# DATA:           30/05/2025
+# DESCRIÇÃO:      Estudando While
+# VERSÃO:         1.0
+# PYTHON:         3.13
 
 """
-Exercício
-Peça ao usuário para digitar seu nome
-Peça ao usuário para digitar sua idade
-Se nome e idade forem digitados:
-    Exiba:
-        Seu nome é {nome}
-        Seu nome invertido é {nome invertido}
-        Seu nome contém (ou não) espaços
-        Seu nome tem {n} letras
-        A primeira letra do seu nome é {letra}
-        A última letra do seu nome é {letra}
-Se nada for digitado em nome ou idade: 
-    exiba "Desculpe, você deixou campos vazios."
+Operadores de atribuição
+=     Atribuição simples           → x = 5       (atribui 5 à variável x)
++=    Soma e atribuição            → x += 3      (equivale a x = x + 3)
+-=    Subtração e atribuição       → x -= 2      (equivale a x = x - 2)
+*=    Multiplicação e atribuição   → x *= 4      (equivale a x = x * 4)
+/=    Divisão e atribuição         → x /= 2      (equivale a x = x / 2)
+//=   Divisão inteira e atribuição → x //= 2     (equivale a x = x // 2)
+**=   Exponenciação e atribuição   → x **= 3     (equivale a x = x ** 3)
+%=    Módulo e atribuição          → x %= 2      (equivale a x = x % 2)
 
 """
 
-# =============================[Resolução]==============================
+# =====================[VARIÁVEIS GLOBAIS]=======================
 
-# =============================[Variaveis]==============================
+condicao = True
+num = 1
+contagem = 0
 
-nome = input('Digite seu nome: ')
-idade = input('Digite sua idade: ')
-espaco = 'tem'
-letras = len(nome)
+# ====================[PROGRAMA PRINCIPAL]=======================
+
+# While quebra com a condição sendo False, ou com break dentro do laço
+
+while True:
+    print('si')
+    num = num + 1
+
+    if num > 2:
+        print('fim')
+        break
+
+while contagem < 200000:
+    contagem += 1
+
+    if contagem  > 7 and contagem < 19:
+        continue
+
+    print(contagem)
 
 
-
-if not(nome == '') and not(idade ==''):
-    if type(nome) == str and type(idade) == int:
-        print(f' Seu nome é {nome}'
-              '\nSeu nome invertido é {nome[-1:-2000]}'
-              '\nSeu nome {espaco} espaços'
-              '\nSeu nome tem {letras}'
-              )
-        
-        
-else:
-    print('Você deixou campos vazios')    
+# ========================[EXECUÇÃO]=============================
+if __name__ == '__main__':
+    # Chamada da função principal ou lógica principal aqui
+    pass
